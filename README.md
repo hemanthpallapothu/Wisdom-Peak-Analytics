@@ -1,71 +1,118 @@
-# Getting Started with Create React App
+# User Directory Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Setup and Initialization
 
-## Available Scripts
+### 1. Set Up the Project Directory:
+1. Create a new directory for your project and navigate into it.
+2. Initialize a new React project using Create React App:
+   ```bash
+   npx create-react-app user-directory
+   ```
+3. Navigate into the project directory:
+   ```bash
+   cd user-directory
+   ```
 
-In the project directory, you can run:
+### 2. Install Necessary Dependencies:
+- **React Router for navigation:**
+   ```bash
+   npm install react-router-dom
+   ```
 
-### `npm start`
+- **State Management:**
+   - Using React Context API (Builtin, no installation needed).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Styling:**
+   - Install Styled Components:
+     ```bash
+     npm install styled-components
+     ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. Bonus Features:
+- Implemented a dark/light theme toggle using React Context API and styled-components.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Steps to Run the Project Locally
 
-### `npm run build`
+1. Clone the repository from GitHub:
+   ```bash
+   git clone https://github.com/your-username/user-directory.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate into the project directory:
+   ```bash
+   cd user-directory
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install all the necessary dependencies:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features Implemented
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. Home Page:
+- Fetches and displays a list of users from `https://jsonplaceholder.typicode.com/users`.
+- Displays user details including name, email, and city.
+- Search functionality to filter users by name.
+- Sorting functionality (A-Z, Z-A) for the user list.
+- Clicking on a user navigates to their detailed page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. User Detail Page:
+- Displays full user details including name, email, phone, company name, and website.
+- Includes a "Go Back" button to return to the home page.
 
-## Learn More
+### 3. State Management:
+- Utilized React Context API for managing global state and user data.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Error Handling and Loading States:
+- Loading spinner displayed while fetching data.
+- Error messages shown if the data fetch fails.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 5. Styling:
+- Used styled-components for dynamic styling.
+- Ensured responsive design for mobile and desktop devices.
 
-### Code Splitting
+### 6. Bonus Features:
+- Implemented a dark/light theme toggle using React Context API and styled-components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Deploying to Vercel:
+1. Initialize a Git repository and commit your code:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   ```
+2. Push the repository to GitHub.
+3. Link your GitHub repository to your Vercel account.
+4. Import the project into Vercel and configure deployment settings.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Additional Notes
+- **Bonus Features Implemented:**
+  - Dark/light theme toggle.
+  - Responsive design for both desktop and mobile.
 
-### Advanced Configuration
+- **State Management:** Used React Context API for global state management.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Styling:** Used styled-components for dynamic styling.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is now ready for deployment and further iterations. Great work implementing the features and ensuring a smooth user experience!
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Wisdom-Peak-Analytics
