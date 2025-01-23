@@ -37,7 +37,7 @@
 
 1. Clone the repository from GitHub:
    ```bash
-   git clone https://github.com/your-username/user-directory.git
+   git clone https://github.com/hemanthpallapothu/user-directory.git
    ```
 
 2. Navigate into the project directory:
